@@ -7,7 +7,7 @@ describe('FormDisplay component', () => {
 
   
   it('renders App', () => {
-    const wrapper = shallow(< FormDisplay submitType={'put'} url={'safsd'} body={'4'} onChange={jest.fn().mockReturnThis()}/>);
+    const wrapper = shallow(< FormDisplay submitType={'put'} url={'safsd'} body={'4'} onChange={() => {}} onSubmit={() => {}}/>);
     expect(wrapper).toMatchSnapshot();
 
 
